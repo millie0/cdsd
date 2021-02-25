@@ -1,21 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>moca_website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css">
     <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row">
-            <div class="today"></div>
-            <div class="hamburger"></div>
-        </div>
+        <div class="navbar container-fluid py-0">
+            <div class="top-nav row">
+                <div class="today">
+                    TODAY'S ON
+                </div>
+                <div class="hamburger">
+                    <div class="ham h1"></div>
+                    <div class="ham h2"></div>
+                    <div class="ham h3"></div>
+                </div>
+            </div>
+            <div class="mid-nav row">
+                <div class="logo mid-nav-left">
+                    <img src="./img/hdLogo1.png" alt="">
+                    <img src="./img/hdLogo2.png" alt="">
+                </div>
+                <div class="mid-nav-right">
+                    <span>時間票價</span>
+                    <span>會員登入</span>
+                    <span>EN</span>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="bot-nav row">
+                <ul>
+                    <li>
+                        <p>Plan Your Visit</p>
+                        <p>參觀資訊</p>
+                    </li>
+                    <li>
+                        <p>Exhibitions and Events</p>
+                        <p>展覽活動</p>
+                    </li>
+                    <li>
+                        <p>Shop & MOCArd</p>
+                        <p>藝術商店與會員</p>
+                    </li>
+                    <li>
+                        <p>Discover MOCA</p>
+                        <p>探索當代</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+    <main>
+        <div class="exhi-section">
+            <div class="container">
+                <div class="topics row">
+                    <p>EXHIBITION</p>
+                    <p>當期展覽及新展預告</p>
+                </div>
+                <div class="exhi-pics row">
+                    <div class="exhi-pic">
+                        <img src="https://www.mocataipei.org.tw/upload/2021_02_013/20210201185617pbas2kTWI4.jpg" alt="">
+                    </div>
+                    <div class="exhi-pic">
+                        <img src="https://www.mocataipei.org.tw/upload/2021_02_093/20210209173621dprga5Ai22.jpg" alt="">
+                    </div>
+                </div>
+                <div class="btn-more row">
+                    <div class="exhi-more-btn">
+                        查看更多展覽資訊
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-section">
+            <div class="container">
+                <div class="topics row">
+                    <p>EVENTS</p>
+                    <p>最新活動及活動預告</p>
+                </div>
+                <div class="event-pics row">
+                    <div class="event-pic">
+                        <img src="https://www.mocataipei.org.tw/upload/2021_02_023/20210202170456sa4qjwJL62.jpg" alt="">
+                    </div>
+                    <div class="event-pic">
+                        <img src="https://www.mocataipei.org.tw/upload/2021_02_023/20210202172352yicec2cVL1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="event-pics row">
+                    <div class="event-pic">
+                        <img src="https://www.mocataipei.org.tw/upload/2021_01_268/20210126183402xyp7odUtu1.jpg" alt="">
+                    </div>
+                    <div class="event-pic">
+                        <img src="https://www.mocataipei.org.tw/upload/2021_02_163/20210216175015fkvksp87u1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="btn-more row">
+                    <div class="exhi-more-btn">
+                        查看更多展覽資訊
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-section">
+            <div class="container">
+                <div class="topics row">
+                    <div class="topics-left">
+                        <p>LATEST NEWS</p>
+                        <p>最新消息</p>
+                    </div>
+                    <div class="topics-right">
+                        <ul>
+                            <li>最新消息</li>
+                            <li>新聞專區</li>
+                            <li>管區公告</li>
+                            <li>人才招募</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news-pics row">
+                    <div class="news-left">
+                        <div class="news-pic">
+                            <img src="https://www.mocataipei.org.tw/upload/2019_06_073/20190607104716k8m91wjbd1.jpg"
+                                alt="">
+                        </div>
+                        <div class="news-word">
+                            <div class="time">
+                                <p>最新消息</p>
+                                <div class="date">
+                                    <p>02/05
+                                        <span>Fri.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <p class="main">2021上半年實習生錄取名單</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-right">
+                        <div class="news-pic">
+                            <img src="https://www.mocataipei.org.tw/upload/2018_12_071/201812071358184nhlvx2Ki1.jpg"
+                                alt="">
+                        </div>
+                        <div class="news-word">
+                            <div class="time">
+                                <p>最新消息</p>
+                                <div class="date">
+                                    <p>02/05
+                                        <span>Fri.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <p class="main">【台北當代藝術館 團體導覽預約調整公告】</p>
+                                <p class="sub">本館即日起暫停受理團體導覽預約服務，造成不便，敬請見諒。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-more row">
+                    <div class="exhi-more-btn">
+                        READ MORE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+<script>
+
+</script>
+
 </html>
