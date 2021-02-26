@@ -2,12 +2,26 @@
 @font-face{
     font-family: 'Futura';
     src:local(Futura);
-
+    font-weight: 'light','Book','Medium','Demi','Heavy','Bold','Extra Bold';
+}
+@font-face{
+    font-family: 'Futura PT';
+    src: local(Futura PT);
+    font-weight: 'light','Book','Medium','Demi','Heavy','Bold','Extra Bold';
 }
 *{
-    outline: 1px solid brown;
-    font-family: 'Futura', '微軟正黑體', Arial, sans-serif;
+    /* outline: 1px solid brown; */
+    font-family: 'Futura', 'FuturaPT', '微軟正黑體', Arial, sans-serif;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
 .navbar{
     width: 100%;
     /* padding: 0; */
@@ -22,7 +36,13 @@
 .today{
     width: 15%;
     background-color: #e83434;
-    
+    padding: 0 45px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 72px;
+    font-family: 'Futura PT';
+    letter-spacing: 0.8px;
 }
 .hamburger{
     width: 70px;
@@ -37,9 +57,20 @@
 }
 .mid-nav{
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     width: 1440px;
+    padding-top: 25px;
 }
+.h1{
+    transform: translateX(5px);
+}
+.h2{
+    transform: translateX(-2px);
+}
+.h3{
+    transform: translateX(3px);
+}
+
 .logo{
     width: 350px;
     padding-top: 20px;
@@ -47,8 +78,30 @@
 .logo img{
     display: block;
 }
+.mid-nav-left{
+    width: 17vw;
+    padding: 0;
+    margin-left: 50px;
+}
+.mid-nav-left img{
+    width: 100%;
+    object-fit: contain;
+}
+.logo .logo-ch{
+    width: auto;
+    margin-top: 5px;
+}
 .mid-nav-right{
-    width: 300px;
+    width: 286px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.fa-search{
+    padding-top: 3px;
+    /* font-weight: 200; */
 }
 .bot-nav{
     margin-top: 40px;
@@ -56,18 +109,40 @@
 }
 .bot-nav ul{
     display: flex;
-    list-style-type: none;
     text-align: center;
     justify-content: center;
+    margin: 0;
 }
 .bot-nav li{
-    margin: 20px;
+    margin: 22px 24px 0;
+    font-family: 'Futura';
+    font-weight: 500;
+}
+.bot-nav p:first-child{
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+.bot-nav p:last-child{
+    font-size: 16px;
+    /* font-weight: 500; */
 }
 .bot-nav p{
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
+/*  */
+
 .topics{
     padding-bottom: 20px;
+    font-size: 1.125rem;
+}
+.topics p{
+    margin: 0;
+}
+.topics p:first-child{
+    font-family: 'Futura';
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
 }
 
 
@@ -75,12 +150,19 @@
 .exhi-section, .event-section{
     padding-top: 130px;
 }
+.exhi-section .container{
+    padding: 0;
+    margin: 0 50px;
+}
 .exhi-pics{
     height: 638px;
 }
 .exhi-pic{
     width: calc(50% - 10px);
     height: calc(46.6vw - 53px);
+}
+.exhi-pics .exhi-pic:first-child{
+    margin-right: 12px;
 }
 .exhi-pic img{
     height: 100%;
@@ -92,8 +174,11 @@
     height: 42px;
     text-align: center;
     padding: 10px;
-    border: 2px solid black;
-    font-size: 10px;
+    border: 3px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+
 }
 .event-pic{
     display: inline-block;
@@ -144,4 +229,84 @@
     height: 17px;
     background-color:gray;
     margin-right: 15px;
+}
+/*  */
+.about{
+    margin-top: 140px;
+}
+.ab-row1{
+    margin-bottom: 20px;
+}
+.ab-text{
+    width: 26%;
+    padding: 3.9vw;
+}
+.t36-500{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 36px;
+}
+.ab-picL{
+    width: 49.5%;
+}
+.ab-picS{
+    width: 24.5%;
+}
+.ab-picL img, .ab-picS img, .mocard-left img{
+    width: 100%;
+    object-fit: cover;
+}
+/*  */
+.mocard{
+    height: 43vw;
+    margin-top: 100px;
+    background-image: url('https://www.mocataipei.org.tw/upload/2018_12_071/20181207161536hfkactHvS1.jpg');
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mocard-left{
+    max-width: 40%;
+    margin-left: 50px;
+}
+.mocard-right{
+    width: 300px;
+margin-right: 100px;
+}
+/*  */
+.footer{
+    background-color: #1b1b1b;
+    margin-top: 100px;
+    padding: 160px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.f-logo{
+    text-align: center;
+}
+.footer a{
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    line-height: 2;
+    text-align: center;
+}
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.t22{
+    text-align: center;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.footerr2{
+    margin-top: 110px;
+}
+.footer-l, .footer-r{
+    width: auto;
+}
+.policy{
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
 }
